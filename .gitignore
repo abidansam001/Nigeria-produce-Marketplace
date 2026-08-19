@@ -3,4 +3,5 @@ dist
 .vite
 server/*.sqlite
 server/*.db
+server/*.db-*
 .env

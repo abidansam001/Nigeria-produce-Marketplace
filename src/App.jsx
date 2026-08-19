@@ -365,7 +365,7 @@ export default function App() {
   }, [search, category, region, view]);
 
   const categories = useMemo(() => ['Crops', 'Spices', 'Roots', 'Vegetables', 'Grains', 'Fruit'], []);
-  const regions = useMemo(() => ['North West', 'South East', 'South West'], []);
+  const regions = useMemo(() => ['North West', 'North East','North Central', 'South South', 'South East', 'South West'], []);
 
   const myFarmerListings = useMemo(
     () => (currentUser && currentUser.role === 'farmer' ? listings.filter((listing) => listing.farmer_name === currentUser.name) : []),

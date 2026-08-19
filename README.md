@@ -1,38 +1,48 @@
 # Nigeria Produce Marketplace
 
-A full-stack marketplace MVP for Nigerian farmers and buyers. It includes produce listings, search, ordering, and a ready-to-deploy Express + SQLite backend.
+A full-stack agricultural marketplace MVP designed to connect Nigerian farmers with buyers. Farmers can list their produce, while buyers can search available products and place orders.
+
+## Problem
+
+Many Nigerian farmers, especially small-scale farmers, have limited access to digital marketplaces where they can showcase their produce and reach potential buyers.
+
+The Nigeria Produce Marketplace provides a simple digital platform where farmers can list agricultural products and buyers can discover and order produce.
 
 ## Features
-- Farmer listing management
-- Search and filter produce listings
+
+- Farmer produce listings
+- Search and filter produce
+- Produce categories
+- Product details
 - Buyer order placement
-- SQLite-backed persistence
-- React frontend with a simple production build
-- Local deployment via Express static serving
+- Farmer and buyer accounts
+- SQLite database persistence
+- Sample Nigerian farmers and produce
+- Responsive React interface
+- Express backend API
+- Production build support
 
-## Quick start
+## Technology Stack
 
-1. Install dependencies:
-   npm install
-2. Initialize the SQLite database with sample Nigerian produce:
-   npm run seed
-3. Start the app in development mode:
-   npm run dev
-4. Open the frontend at http://localhost:5173
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Backend:** Node.js + Express
+- **Database:** SQLite
+- **Database Library:** better-sqlite3
+- **API:** REST API
 
-## Production build
+## Requirements
 
-1. Build the frontend:
-   npm run build
-2. Start the server:
-   npm start
+Before running the project, make sure you have:
 
-The app will serve the built frontend and API on the same server.
+- Node.js 18 or newer
+- npm
+- Git (optional if the project is downloaded as a ZIP file)
 
-## Deploying
-This app is ready to deploy to a Node.js host such as Render, Railway, or any VPS. Ensure Node 18+ is available and run:
+## Getting Started
 
-npm install
-npm run seed
-npm run build
-npm start
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/abidansam001/nigeria-produce-marketplace.git
+cd nigeria-produce-marketplace
